@@ -1,9 +1,13 @@
 var tomb = [];
 var be = document.getElementById("bemenet")
 function bevitel() {
-    if (be.value !=null) {
-        tomb.push(be.value);
+    if (be.value !="") {
+        if (!tomb.includes(be.value)) {
+            tomb.push(be.value);
         kiiras();
+        }
+        
+        
       }
 }
 
