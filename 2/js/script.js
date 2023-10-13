@@ -10,6 +10,12 @@ function bevitel() {
         
       }
 }
+be.addEventListener("keypress",function(event)
+{
+    if (event.key ==="Enter") {
+        bevitel();
+    }
+})
 
 function kiiras() {
     let ki = "";
